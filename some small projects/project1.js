@@ -22,8 +22,25 @@ let foodItem =
 
 function salesTax(foodItem)
 {
-    return ((foodItem.foodCost) * 0.0575) + foodItem.foodCost;// what this does is finds the tax (5.75% in Ohio) and then adds that to the total 
+    let taxTotal = (((+foodItem.foodCost) * 0.0575) + +foodItem.foodCost); //adding in the plus signs in front of the foodCost objects because that turns them into numbers from strings 
+    return taxTotal;    // what this does is finds the tax (5.75% in Ohio) and then adds that to the total 
 }
 
+
+//now after that, let's make the function to bring it all together and find the total cost
+
+function totalCost(foodItem)
+{
+    console.log("You ordered " + foodItem.foodName + " and the cost is: " + foodItem.foodCost)
+    let tipPercentage = prompt("How much do you want to tip? 10%, 15%, or 20%? Input as decimals please.");
+    console.log("You chose to tip " + tipPercentage);
+    let beforeTip = salesTax(foodItem);
+    console.log("Before tip, your total is "+ beforeTip);
+    let finalCost = (beforeTip * tipPercentage) + beforeTip;
+    console.log("After tip, your total cost is: " + finalCost);
+}
 //first things first, let's read some user input. 
-let orderCost = window.prompt("How much did your meal cost?"); //this will prompt the user for a total 
+foodItem.foodName = prompt("What did you order?"); //this will prompt the user for their dish of choice 
+foodItem.foodCost= prompt("How much did it cost?"); //this will prompt the user for the cost of it. 
+
+totalCost(foodItem);
