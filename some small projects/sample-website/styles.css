@@ -1,0 +1,34 @@
+.header{
+    display: flex;
+    height: 100px;
+    background-color: lightcoral;
+    justify-content: center;
+    align-items: center;
+}
+
+.optionBar{
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    gap:10px; 
+    background-color: black;
+}
+
+.barbutton{
+    color: white;
+}
+
+.bodyHolder{
+    display: flex;
+}
+
+.leftColumn{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rightColumn{
+    display: flex;
+    flex-direction: column;
+}
