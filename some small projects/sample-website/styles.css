@@ -1,3 +1,7 @@
+body{
+    background-color: silver;
+}
+
 .header{
     display: flex;
     height: 100px;
@@ -20,7 +24,7 @@
 
 .bodyHolder{
     display: flex;
-    height: 100%;
+    min-height: 700px;
 }
 
 .leftColumn{
@@ -29,7 +33,6 @@
     background-color: red;
     float: left;
     width: 300px;
-    height: 100%;
 
 }
 
@@ -38,5 +41,4 @@
     flex-direction: column;
     background-color: purple;
     width: 100%;
-    height: 100%;
 }
