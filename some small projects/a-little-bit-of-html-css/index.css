@@ -35,19 +35,26 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 
 .first{
     display: flex;
+    flex-direction: column;
     border: 5px solid orange;
     padding: 50px;
-    justify-content: center;
+    justify-items: center;
+    align-items: center;
 }
 
 .second{
     display: flex;
+    flex-direction: column;
     border: 5px solid red;
-    padding: 50px;
+    padding: 70px;
+    justify-content: center;
+    align-items: center;
 }
 
 .third{
     display: flex;
+    flex-direction: column;
     border: 5px solid purple;
     padding: 50px;
 }
+
