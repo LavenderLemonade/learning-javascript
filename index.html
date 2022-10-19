@@ -11,8 +11,22 @@
     <h1> Hey there</h1>
 
 
-    <script src="index.js">
-       
+    <script>
+
+    function wordsBackwards(word) 
+    {
+        newWord = '';
+
+        for (i = 0; i < word.length; i++)
+        {
+            newWord += word[length - (i+1)]
+        }
+
+        return newWord
+    }
+
+    wordsBackwards("hello");
+
     </script>
     
 </body>
