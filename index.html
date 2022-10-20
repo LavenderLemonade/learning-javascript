@@ -11,23 +11,26 @@
     <h1> Hey there</h1>
 
 
-    <script>
+<script>
 
-    function wordsBackwards(word) 
+    const removeFromArray = function taktItOut(stuff, removal) 
     {
-        newWord = '';
-
-        for (i = 0; i < word.length; i++)
+        for (i = 0; i < stuff.length; i++)
         {
-            newWord += word[length - (i+1)]
+            if (stuff[i] == removal)
+            {
+                stuff.splice(i,1)
+            }
         }
 
-        return newWord
-    }
+        return stuff
+    };
 
-    wordsBackwards("hello");
+    let yo = [1,2,3,4,5];
 
-    </script>
+    console.log(removeFromArray(yo,3))
+
+</script>
     
 </body>
 </html>
